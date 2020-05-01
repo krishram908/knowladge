@@ -1,0 +1,164 @@
+<!doctye html>
+<html lang="nepali">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+ body  {
+  background-image: url("map-asia-south.jpg");
+   background-repeat:no-repeat;      }
+
+  header{
+  background-color: lightblue;
+  padding: 30px;
+  font-size: 70%;
+  color: black;}
+  * {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url();
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 30%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 60%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+ </style>
+<body>
+
+<header style='font-size:30px;'>&#127758; <atext-align="right> Home </a>  saarc list   world list  </header>
+
+</style>
+</head>
+<body>
+
+<h2>SAARC lIST OF PEOPLE AFFETED</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%;">Country</th>
+    <th style="width:20%;">Affeted people</th>
+	<th style="width":" >Death</th>
+	<th > recovery people</th>
+  </tr>
+  <tr>
+    <td>Nepal</td>
+    <td>36</td>
+    <td>8</td>
+	<td>2</>
+ <tr>
+    <td>India</td>
+    <td>724</td>
+    <td>17</td>
+	<td>45</td>
+  </tr>
+  <tr>
+    <td>Pakistan</td>
+    <td>1298</td>
+    <td>9</td>
+	<td>21</td>
+  </tr>
+  <tr>
+    <td>Bangladesh</td>
+    <td>48</td>
+    <td>5</td>
+	<td>11</td>
+  </tr>
+  <tr>
+    <td>afghanistan</td>
+    <td>94</td>
+    <td>4</td>
+	<td>2</td>
+  </tr>
+ 
+  <tr>
+    <td>Maldive</td>
+    <td>14</td>
+    <td>0</td>
+	<td>8</td>
+  </tr>
+  <tr>
+    <td>Bhutan</td>
+    <td>3</td>
+    <td>0</td>
+	<td>0</td>
+  </tr>
+ <tr>
+    <td>Srilanka</td>
+    <td>106</td>
+    <td>0</td>
+	<td>7</td>
+  </tr>
+</table>
+<p>  ram is hear </p>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
